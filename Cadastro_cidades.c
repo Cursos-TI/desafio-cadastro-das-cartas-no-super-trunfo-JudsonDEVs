@@ -22,7 +22,7 @@ int main (){
     scanf ("%s", nome);
 
     printf ("População: \n");
-    scanf ("%f", &populacao);
+    scanf ("%d", &populacao);
 
     printf ("Area: \n");
     scanf ("%f", &area);
@@ -38,7 +38,7 @@ int main (){
     printf ("Estado: %s\n", estado);
     printf ("Código: %s\n", codigo);
     printf ("Cidade: %s\n", nome);
-    printf ("População: %f\n", populacao);
+    printf ("População: %d\n", populacao);
     printf ("Área: %fKM²\n", area);
     printf ("PIB: %f\n", pib);
     printf ("Quantidade de pontos turísticos: %d\n", ponto);
