@@ -2,15 +2,21 @@
 
 int main (){
 
-    char cdc[20]; // Código da cidade
+    char estado[50]; // Nome do Estado
+    char codigo[20]; // Código da cidade
     char nome[50]; // Nome da cidade
-    float populacao, area, pib; // Número de População, Área e PIB
+    int populacao; // Numero de Habitantes
+    float area; // Area em m²
+    float pib; // Produto interno bruto
     int ponto; // Pontos Turisticos
 
     printf ("CADASTRO DE CARTAS\n");
 
+    printf ("Estado: \n");
+    scanf ("%s", estado);
+
     printf ("Código: \n");
-    scanf ("%s", cdc);
+    scanf ("%s", codigo);
 
     printf ("Cidade: \n");
     scanf ("%s", nome);
@@ -28,14 +34,18 @@ int main (){
     scanf ("%d", &ponto);
 
     printf ("Dados Cadastrados\n");
-    printf ("Código: %s\n", cdc);
+
+    printf ("Estado: %s\n", estado);
+    printf ("Código: %s\n", codigo);
     printf ("Cidade: %s\n", nome);
-    printf ("População: %.3f\n", populacao);
-    printf ("Área: %.3fKM²\n", area);
-    printf ("PIB: %.3f\n", pib);
+    printf ("População: %f\n", populacao);
+    printf ("Área: %fKM²\n", area);
+    printf ("PIB: %f\n", pib);
     printf ("Quantidade de pontos turísticos: %d\n", ponto);
 
 
     return 0;
 
 }
+
+
