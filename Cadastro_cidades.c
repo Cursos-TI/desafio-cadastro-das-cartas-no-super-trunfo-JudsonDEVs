@@ -8,7 +8,10 @@ int main (){
     int populacaoc1, populacaoc2; // Numero de Habitantes
     float areac1, areac2; // Area em m²
     float pibc1, pibc2; // Produto interno bruto
+    float dpopc1, dpopc2; // Densidade populaciona
+    float ppcc1, ppcc2; // PIB per capita   
     int pontoc1, pontoc2; // Pontos Turisticos
+
 
     printf ("CADASTRE A CARTA 1\n");
 
@@ -33,6 +36,9 @@ int main (){
     printf ("Quantidade de Pontos Turísticos: \n");
     scanf ("%d", &pontoc1);
 
+    dpopc1 = (populacaoc1 / areac1); // calculo da densidade populacional.
+    ppcc1 = (pibc1 / populacaoc1); // calculo pib per capita.
+
     printf ("Dados Cadastrados\n");
 
     printf ("Estado: %s\n", estadoc1);
@@ -42,6 +48,8 @@ int main (){
     printf ("Área: %fKM²\n", areac1);
     printf ("PIB: %f\n", pibc1);
     printf ("Quantidade de pontos turísticos: %d\n", pontoc1);
+    printf ("Densidade Populacional: %.2f hab/km²\n:", dpopc1);
+    printf ("PIB Per Capita: %.2f reais\n", ppcc1);
 
     printf ("CADASTRE A CARTA 2\n");
 
@@ -66,6 +74,9 @@ int main (){
     printf ("Quantidade de Pontos Turísticos: \n");
     scanf ("%d", &pontoc2);
 
+    dpopc2= (populacaoc2 / areac2); // calculo da densidade populacional.
+    ppcc2 = (pibc2 / populacaoc2); // calculo pib per capita.
+
     printf ("Dados Cadastrados\n");
 
     printf ("Estado: %s\n", estadoc2);
@@ -75,6 +86,8 @@ int main (){
     printf ("Área: %fKM²\n", areac2);
     printf ("PIB: %f\n", pibc2);
     printf ("Quantidade de pontos turísticos: %d\n", pontoc2);
+    printf ("Densidade Populacional: %.2f hab/km²\n:", dpopc2);
+    printf ("PIB Per Capita: %.2f reais\n", ppcc2);
 
     return 0;
 
